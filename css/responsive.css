@@ -1,0 +1,174 @@
+@media screen and (max-width:1220px) and (min-width:1023px) {
+    .cripto-global-map:after {
+        top: -151px;
+    }
+    .cripto-global-map::before {
+        top: -138px;
+    }
+}
+@media screen and (max-width:1023px) {
+    .cripto-global-map-content {
+        width: 50%;
+    }
+    .cripto-global-map {
+        width: 50%;
+    }
+    .cripto-global-map-content h2 {
+        font-size: 26px;
+        line-height: 44px;
+    }
+}
+@media screen and (max-width:991px) {
+    nav ul {
+        display: none;
+    }
+    .navigation {
+        width: 30px;
+        height: 2px;
+        background: var(--white);
+        position: absolute;
+        right: 18px;
+    }
+    
+    .search {
+        padding-right: 80px;
+    }
+    
+    .navigation::before,.navigation::after {
+        width: 30px;
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: var(--white);
+        transition: all 0.4s ease;
+    }
+    .navigation::before {
+        top: 8px;
+    }
+    .navigation::after {
+        top: -8px;
+    }
+    .show-content > ul {
+        display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0d0d0e;
+    z-index: 99;
+    transition: all 0.4s ease;
+    height: 100vh;
+    }
+    nav ul li {
+        padding: 7px 10px;
+        margin: 0;
+    }
+    .show-content .navigation::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .show-content .navigation::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .show-content .navigation {
+        background-color: transparent;
+    }
+    .search-field .show-content > ul {
+        top: calc(100% + 53px);
+    }
+    .currency-table {
+        overflow: auto;
+        overflow-x: scroll;
+    }
+    table tr td {
+        width: 180px;
+    }
+    table tr td span {
+        padding-left: 8px;
+    }
+    td:nth-child(3n+4) {
+        padding-left: 40px;
+    }
+    .cripto-content {
+        flex-wrap: wrap;
+    }
+    .cripto-global-map-content,.cripto-global-map {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .cripto-global-map:after {
+        top: 12px;
+    }
+    .cripto-global-map::before {
+        top: 19px;
+    }
+    
+    
+}
+@media screen and (max-width:767px) {
+    .logo {
+        max-width: 280px;
+    }
+    .header-logo a img {
+        max-width: 280px;
+    }
+    .cryptocurrency-main {
+        padding: 50px 0px;
+    }
+    
+    .title h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .title {
+        margin-bottom: 10px;
+    }
+    
+    .sub-title h3 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    table tr th {
+        font-size: 18px;
+    }
+    
+    .currency-table table tr {
+        margin-bottom: 20px;
+        line-height: 38px;
+    }
+    
+    table tr td {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .currency-table {
+        padding-top: 25px;
+    }
+    button.view-btn {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 170px;
+
+    }
+    .cripto-platyform {
+        padding: 12px 0px;
+    }
+}
+@media screen and (max-width:539px) {
+    header#header {
+        padding: 20px 0px;
+    }
+    .search {
+        padding-right: 62px;
+    }
+    .search-icone {
+        font-size: 20px;
+    }
+    .logo {
+        max-width: 240px;
+    }
+    
+}

@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color:#00092A;
+    --header-bg:#0a1939;
+    --text-highlight:#14FF00;
+    --white:#fff;
+    --black:#000;
+    --danger:#FF0000;
+    --logo-color:#FBC315;
+}
+.container {
+    width: 100%;
+    max-width: 1237px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+#header {
+    width: 100%;
+    display: inline-block;
+    padding: 32px 0;
+    background: var(--header-bg);
+    position: relative;
+}
+
+.content {display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;}
+
+.header-logo {
+    width: auto;
+    margin: 0 -15px;
+}
+
+.header-logo a {
+    display: inline-block;
+}
+
+nav {
+    width: auto;
+    padding: 0 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 0 15px;
+}
+.header-logo a img {
+    width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+nav ul li a:hover {
+    color: var(--logo-color);
+}
+.search-icone {
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+}
+.serch-inp {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    display: none ;
+}
+
+.serch-inp input {
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 3px 3px #00000038;
+    border: none;
+    font-size: 15px;
+    color: #555;
+    font-family: 'Poppins';
+}
+.search-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0a1939eb;
+    padding: 7px 10px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Poppins';
+}
+
+.cryptocurrency-main {
+    width: 100%;
+    display: inline-block;
+    padding: 80px 0px 65px 0px;
+    background-color: #00092af5;
+}
+
+.cryptocurrency-content {
+    width: 100%;
+    display: inline-block;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--white);
+}
+
+.sub-title h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+.currency-table {
+    width: 100%;
+    display: inline-block;
+    padding-top:65px;
+}
+
+table {
+    width: 100%;
+}
+
+table tr td {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.currency-table table tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    align-items: center;
+}
+table tr td img {
+    margin-right:23px;
+}
+table tr td span {
+    font-size: 14px;
+    list-style: 24px;
+    font-weight: 400;
+    color: #858585;
+    padding-left: 15px;
+    
+}
+table tr td:last-child {
+    display: contents;
+}
+
+table tr th {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+tr:nth-child(n+2) td:nth-child(3n+3) {
+    color: var(--text-highlight);
+}
+tr:nth-child(3n) td:nth-child(3n+3) {
+    color: var(--danger);
+}
+td:nth-child(3n+4) {
+    padding-left: 50px;
+}
+button.view-btn {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 0 auto;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+    background:linear-gradient(#3DD8EE,#0997E8);
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+}
+.sub-title h3:first-child span:first-child {
+    color: var(--text-highlight);
+}
+.sub-title h3:first-child span:last-child {
+    color: var(--danger);
+}
+.cripto-content {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.cripto-global-map {
+    width: 60%;
+    padding: 0 15px;
+    position: relative;
+}
+.cripto-content {
+    background: url(../images/worl\ map.png) no-repeat 100% ;
+    background-position: left center;
+}
+
+.cripto-global-map-content {
+    width: 40%;
+    padding: 0 15px;
+}
+
+.map-cards .card {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background: #0A1B2B;
+    position: relative;
+}
+.map-card-img {
+    width: 50px;
+    display: flex;
+    padding: 18px 13px;
+    align-items: stretch;
+    margin-right: 6px;
+    position: relative;
+}
+
+.map-cards .card span {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white);
+}
+.map-cards .card:first-child {
+    margin-left: 80px;
+}
+.map-cards .card:nth-child(2) {
+    float: right;
+    margin-top: 80px;
+}
+.map-cards .card:last-child {
+    margin-top: 180px;
+}
+
+.map-cards {
+    max-width: 440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+    background: url(../images/bitcoin.png) no-repeat 100%;
+    background-position:center bottom;
+}
+.cripto-platyform {
+    padding: 52px 0px;
+    background-color: var(--bg-color);
+}
+.cripto-global-map-content h2 {
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.cripto-global-map-content .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 35px;
+    width: calc(100% - 80px);
+}
+.cconfiden-comunity-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cconfiden-comunity-card .card {
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+    margin-bottom: 27px;
+}
+.cconfiden-comunity-card .card:last-child {
+    margin-bottom: 0;
+}
+
+.cconfiden-comunity-card .icone {
+    background: #0F1535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 28px;
+}
+
+.cconfiden-comunity-card .text {
+    margin-bottom: 0px;
+}
+
+.cconfiden-comunity-card .text h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.cconfiden-comunity-card .text p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.cconfiden-comunity-card .card img{
+    width: auto;
+    height: auto;
+}
+.cripto-global-map:after {
+    background: url(../images/Ellipse\ 1.png) no-repeat 40%;
+    background-position: center;
+    position: absolute;
+    top: -61px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    right: 0px;
+}
+.cripto-global-map::before {
+    background: url(../images/Ellipse\ 2.png) no-repeat 40%;
+    background-position: center;
+    position: absolute;
+    top: -48px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    right: 46px;
+}
+.map-cards::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+.map-cards::before {
+    content: "";
+    position: absolute;
+    background: url(../images/Shiba_Inu_coin_logo.png) no-repeat;
+    top: 90px;
+    left: 50px;
+    width: 40px;
+    height: 100%;
+    background-size: 100%;
+}
+.map-cards::after {
+    content: "";
+    position: absolute;
+    background: url(../images/etherum.png) no-repeat;
+    top: 80px;
+    right: 100px;
+    width: auto;;
+    background-size: 40px;
+    background-position: right top;
+}
+.map-card-img:before {
+    content: "";
+    position: absolute;
+    background: url(../images/bitcoin.png) no-repeat;
+    top: 80px;
+    right: 100px;
+    width: auto;
+    background-size: 40px;
+    background-position: right top;
+    height: auto;
+}
